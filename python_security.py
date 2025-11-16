@@ -3,4 +3,4 @@ username = input("Username: ")
 if username.isalnum() and len(username) <= 10:
     print("Username fits requirements")
 else:
-    print("Doesn't fit1234")
+    print("Doesn't fit")
