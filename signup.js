@@ -12,13 +12,20 @@ function check(){
     // This firstly checks that the email contains a .com and an @ symbol
     // It also checks that the password includes by using the exisitng password testing function
     // The operand && will return true only if all values are true
+    let name = document.getElementById("name").value
+    let dob = document.getElementById("DOB").value
     let password = document.getElementById("password").value
     let email = document.getElementById("email").value
     if (email.includes("@") === true && email.includes(".com") === true && password_test(password) === true){
         // Debugging statement
         console.log("All valid values")
-        // You can redirect here
-        alert("Form Submitted Sucessfully")
+        // Saves the infomation to local storage to display back to user.
+        localStorage.setItem("Name",name)
+        localStorage.setItem("Email",email)
+        localStorage.setItem("Password",password)
+        localStorage.setItem("DOB",dob)
+        // You redirect here
+        window.location.href = "results.html"
     }else{
         // Alerts the user
         alert("A problem has occured, please ensure all values are valid.")
