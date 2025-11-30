@@ -7,7 +7,11 @@ function password_test(message){
     // The operand && will return true only if both values are true
     return has_number && has_letter && password_len_test >= 8;
 }
-
+function email_test(email){
+    // This operand functions by testing a regex (more complicated version of above)
+    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)
+    // It ensures the format of the email follows this : "____@__.__"
+}
 function check(){
     // This firstly checks that the email contains a .com and an @ symbol
     // It also checks that the password includes by using the exisitng password testing function
@@ -16,7 +20,8 @@ function check(){
     let dob = document.getElementById("DOB").value
     let password = document.getElementById("password").value
     let email = document.getElementById("email").value
-    if (email.includes("@") === true && email.includes(".com") === true && password_test(password) === true){
+    console.log(email_test(email))
+    if (email_test(email) === true && password_test(password) === true){
         // Debugging statement
         console.log("All valid values")
         alert("redirect")
