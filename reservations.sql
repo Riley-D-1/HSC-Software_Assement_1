@@ -12,4 +12,4 @@ INSERT INTO RestaurantReservations(UserName,UserEmail,ReservationDate,Time,Numbe
                                 ('Ethan','ethan@example.com','2024-09-13','21:00', 2);
                     
 SELECT * FROM RestaurantReservations 
-    WHERE Time 
+    Like '%19', '%18'

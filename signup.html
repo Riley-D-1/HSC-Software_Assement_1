@@ -7,14 +7,14 @@
 </head>
 <body>
     <!-- The div class for CSS selection and readibility-->
-    <form class = "login">
+    <div class = "login">
         <br>
         Name:
         <br>
         <!-- The id allows me to find it using JS selectors-->
         <!-- The placeholder is a greyed out placeholder that provides the user with an idea of what to put in the box-->
         <!-- The required key word ensures that these are filled out-->
-        <input id = "name" placeholder = "John Citizen" required >
+        <input id = "name_" placeholder = "John_Citizen" required >
         <br>
         <br>
         Email:
@@ -38,9 +38,8 @@
         <br>
         <br>
         <!-- The submit button for the form-->
-        <button id = "submit_form" onclick = "check()">Submit</button>
- 
-    </form>
+        <button id = "submit_form" type = "submit" onclick = "check()">Submit</button>
+    </div>
 </body>
 <!--Has to be below in order to find the values of the html-->
 <script src='signup.js'></script>
