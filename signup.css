@@ -1,4 +1,19 @@
 /* To be completed */
-body{
-    background-color: aqua;
+.login{
+    border: 1px solid black;
+    content-all: center;
+    align-items: center;
+    text-align: left;
+}
+input{
+    border-radius: 10px;
+    padding: 10px;
+    border: 1px solid #000000;
+}
+#submit_form{
+    border:none;
+    padding:20px;
+    background-color: rgb(0, 0, 0);
+    color:white;
+    align-content: center;
 }
