@@ -11,3 +11,9 @@ def check(username_):
         print("Doesn't fit")
 # Calls the function and passes it the input 
 check(username)
+#Testing Inputs
+#Dave
+#<dave1234
+# (a space)
+#Breaking_
+#RileyD1

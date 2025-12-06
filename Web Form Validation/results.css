@@ -1,0 +1,24 @@
+body{
+  min-height: 88vh;
+  display: flex;
+  align-items: center;  
+  justify-content: center;
+  background: #ffffff;
+  font-family: "Inter", sans-serif;
+}
+#form_info{
+    max-width: 430px;
+    width: 50%;
+    background: #fff;
+    padding: 34px;
+    border-radius: 6px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+    border: 1px solid black;
+    text-align: left;
+}
+#form_info div{
+    text-align: left;
+    padding-top: 20px;
+    width: 100%;
+    border-radius: 10px;
+}

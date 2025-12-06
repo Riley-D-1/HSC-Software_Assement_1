@@ -13,4 +13,10 @@
                     
 SELECT * FROM RestaurantReservations 
     WHERE Time LIKE '19:%' OR Time = '20:00';
+
+
+
 SELECT SUM(NumberOfGuests)FROM RestaurantReservations WHERE ReservationDate BETWEEN '2024-09-13' AND '2024-09-25';
+
+
+

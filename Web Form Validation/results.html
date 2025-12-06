@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Results</title>
+    <link rel='stylesheet' href='results.css'>
+</head>
+<body>
+    <div id = "form_info">
+        <h2>Result:</h2>
+    </div>
+</body>
+    <script>
+        // Runs the entire set of code on the load of the content
+        window.onload = function() {
+            // Fetch all of the infomation from local storage 
+            // (This would not be useed in prouduction enviroment due to data safety concerns)
+            let name = localStorage.getItem("Name")
+            let email = localStorage.getItem("Email")
+            let password = localStorage.getItem("Password")
+            let dob = localStorage.getItem("DOB")
+            // Get parent div
+            const parentElement = document.getElementById('form_info');
+            // Create a div for each and set the text content
+            // Name
+            const name_div = document.createElement('div');
+            name_div.textContent = `Name: ${name}`;
+            // Email
+            const email_div = document.createElement('div');
+            email_div.textContent = `Email: ${email}`;
+            // Date of Birth (DOB)
+            const dob_div = document.createElement('div');
+            dob_div.textContent = `DOB: ${dob}`;
+            // Password
+            const password_div = document.createElement('div');
+            password_div.textContent = `Password: ${password}`;
+
+            // Append a new div for each element
+            parentElement.appendChild(name_div);
+            parentElement.appendChild(email_div);
+            parentElement.appendChild(dob_div);
+            parentElement.appendChild(password_div);
+        }
+        
+    </script>
+</html>

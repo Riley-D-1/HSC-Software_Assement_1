@@ -1,0 +1,41 @@
+
+body{
+  min-height: 88vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+  font-family: "Inter", sans-serif;
+}
+.signup{
+    max-width: 430px;
+    width: 50%;
+    background: #fff;
+    padding: 34px;
+    border-radius: 6px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+    border: 1px solid black;
+    text-align: left;
+}
+input{
+    width: 100%;
+    border-radius: 10px;
+    padding: 10px;
+    border: 1px solid #000000;
+}
+#password_show_toggle{
+    width: auto;
+
+}
+#submit_form{
+    border-radius: 10px;
+    border:none;
+    width: 100%;
+    padding:20px;
+    background-color: rgb(0, 0, 0);
+    color:white;
+    align-content: center;
+}
+h2{
+    text-align: center;
+}
